@@ -22,12 +22,9 @@ class Triangle
       :isosceles
     elsif @side1 != @side2 && (@side1 + @side2) > @side3
       :scalene
-    elsif @side1 == 0 && @side2 == 0 && @side3 == 0
-      begin
+    #elsif @side1 == 0 && @side2 == 0 && @side3 == 0
+    elsif @side1 == 0
         raise TriangleError
-      rescue TriangleError => error 
-        puts error.message
-      end
     end
   end
   
