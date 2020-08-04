@@ -25,7 +25,7 @@ class Triangle
     elsif @side1 == 0 && @side2 == 0 && @side3 == 0
       begin
         raise TriangleError
-      rescue TriangleEror => error 
+      rescue TriangleError => error 
         puts error.message
       end
     end
