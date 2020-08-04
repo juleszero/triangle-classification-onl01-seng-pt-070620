@@ -23,11 +23,11 @@ class Triangle
     elsif @side1 != @side2 && (@side1 + @side2) > @side3
       :scalene
     elsif @side1 == 0 && @side2 == 0 && @side3 == 0
-      #begin
+      begin
         raise TriangleError
-      #rescue TriangleEror => error 
-        #puts error.message
-      #end
+      rescue TriangleEror => error 
+        puts error.message
+      end
     end
   end
   
